@@ -1,0 +1,36 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ul,
+ol {
+  @apply my-2;
+  @apply ml-12;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  @apply text-xl;
+  @apply mb-3;
+  @apply leading-relaxed;
+  @apply pl-1;
+}
+
+li::marker {
+  @apply text-blue-500;
+  @apply font-semibold;
+}
+
+li::before {
+  content: '';
+  @apply absolute;
+}
